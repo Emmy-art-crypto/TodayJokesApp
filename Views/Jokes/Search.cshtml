@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Search Jokes";
+}
+
+<h2>Search Jokes</h2>
+
+<p>Type a keyword to find jokes:</p>
+
+<form asp-controller="Jokes" asp-action="SearchResults" method="get">
+    <input type="text" name="query" placeholder="Type anything..." class="form-control mb-2" />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
